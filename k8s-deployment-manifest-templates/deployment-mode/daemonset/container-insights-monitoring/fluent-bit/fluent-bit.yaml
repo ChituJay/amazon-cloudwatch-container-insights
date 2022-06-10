@@ -66,7 +66,7 @@ data:
         Name                tail
         Tag                 application.*
         Exclude_Path        /var/log/containers/cloudwatch-agent*, /var/log/containers/fluent-bit*, /var/log/containers/aws-node*, /var/log/containers/kube-proxy*
-        Path                /var/log/containers/*.log
+        Path                /mnt/cw_logfs/*/*/*.log
         Docker_Mode         On
         Docker_Mode_Flush   5
         Docker_Mode_Parser  container_firstline
